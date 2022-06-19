@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { View, Text, Image, StatusBar, Button } from 'react-native'
 import IllustrationsImg from '../../assets/illustration.png'
-import { ButtonIcon } from '../../components/ButtonICon'
+import { ActionCamera } from '../../components/ActionCamera'
+import { ButtonIcon } from '../../components/ButtonIcon'
 import { styles } from './styles'
 
 export function SignIn () {
@@ -26,7 +27,9 @@ export function SignIn () {
                     Crie grupos para jogar seus games {'\n'}
                     favoritos com seus amigos
                 </Text>
+                <ActionCamera></ActionCamera>
                 <ButtonIcon title='Entrar com o Discord' activeOpacity={0.7} />
+                <ButtonIcon title='Acesso a camera' activeOpacity={0.7} />
             </View>
         </View>
     )
